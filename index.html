@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>belong-to-me</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<style>
+			.container {
+				position: relative;
+			}
+			.item {
+				width: 120px;
+				height: 120px;
+				box-shadow: 0px 0px 10px #31B0D5;
+				border-radius: 50%;
+				position: absolute;
+				display: none;
+				font-size: 25px;
+				text-align: center;
+				font-family: "微软雅黑";
+				color: #269ABC;
+				line-height: 120px;
+			}
+			.item:hover{
+				background-color: rgba(49,176,213,.25);
+			}
+			.resume {
+				display: block !important;
+				box-shadow: 0px 0px 10px #ccc8c8;
+			}
+			
+			.mask {
+				display: none;
+				position: fixed;
+				width: 80%;
+				height: 70%;
+				top: 10%;
+				left: 10%;
+				z-index: 101;
+				border-radius: 8px;
+				padding-left: 2%;
+				padding-right: 2%;
+				background-color: #FFFFFF;
+			}
+			
+			.maskBg {
+				display: none;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				z-index: 100;
+				top: 0px;
+				background-color: rgba(34, 34, 34, .45);
+			}
+			
+			.fontStyle {
+				font-size: 1.2em;
+				font-family: "微软雅黑";
+				margin-bottom: 5%;
+				border-bottom: 1px solid #31B0D5;
+				display: inline-block;
+			}
+			
+			#head {
+				border-radius: 20px;
+			}
+			
+			.personalIntroduction {
+				margin-bottom: 10px;
+				display: none;
+			}
+			
+			.leftData {
+				border-left: 1px solid #31B0D5;
+			}
+			
+			.selfAssessment {
+				display: none;
+			}
+			
+			.skillData {
+				height: 20px;
+				width: 65%;
+				border-radius: 20px;
+				border: 1px solid rgba(49, 176, 213, .25);
+			}
+			
+			.skillData div {
+				background-color: #31B0D5;
+				border-radius: 20px;
+				height: 100%;
+				text-align: right;
+				padding-right: 10px;
+				color: #FFFFFF;
+			}
+			
+			.skillBiased {
+				display: none;
+				margin-bottom: 10px;
+			}
+			
+			.skillBiased span {
+				font-size: 1.2em;
+				font-family: "微软雅黑";
+				margin-bottom: 5%;
+				display: inline-block;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="item" data-toggle="0">个人介绍</div>
+			<div class="item" data-toggle="1">教育背景</div>
+			<div class="item" data-toggle="2">项目经验</div>
+			<div class="item" data-toggle="3">校园经历</div>
+			<div class="item" data-toggle="4">技能偏向</div>
+			<div class="item" data-toggle="5">自我评价</div>
+			<div class="item resume">简历</div>
+		</div>
+		<div class="mask">
+			<h2 style="color: #31B0D5;padding-bottom: 10px; border-bottom: 2px solid #31B0D5;">个人介绍</h2>
+			<div class="personalIntroduction row">
+				<div class="dataBox col-lg-9">
+					<div class="leftData col-lg-5">
+						<span class="fontStyle">姓名:&ensp;</span><span class="fontStyle">赖城粮</span><br />
+						<span class="fontStyle">民族:&ensp;</span><span class="fontStyle">汉族</span><br />
+						<span class="fontStyle">电话:&ensp;</span><span class="fontStyle">15350397080</span><br z/>
+						<span class="fontStyle">邮箱:&ensp;</span><span class="fontStyle">3153113583@qq.com</span><br />
+						<span class="fontStyle">住址:&ensp;</span><span class="fontStyle">新余学院男生宿舍8#516</span><br />
+					</div>
+					<div class="rightData col-lg-5">
+						<span class="fontStyle">出生年月：&ensp;</span><span class="fontStyle">1996-08</span><br />
+						<span class="fontStyle">身&ensp;&ensp;&ensp;&ensp;高：&ensp;</span><span class="fontStyle">170cm</span><br />
+						<span class="fontStyle">政治面貌</span><span class="fontStyle">共青团员</span><br />
+						<span class="fontStyle">院&ensp;&ensp;&ensp;&ensp;校：&ensp;</span><span class="fontStyle">新余学院</span><br />
+						<span class="fontStyle">学&ensp;&ensp;&ensp;&ensp;历：&ensp;</span><span class="fontStyle">专科</span><br />
+					</div>
+				</div>
+				<img id="head" class="col-lg-3" src="img/2.jpeg" width="20%" />
+			</div>
+			<div class="selfAssessment">
+				<p>一个兴趣使然的程序员，对新的技术和标准保持关注，有些开源精神，做过一些web和app项目，在项目中负责前端技术架构和交互设计.</p>
+			</div>
+			<div class="skillBiased">
+				<div class="col-lg-4">
+					<span>C语言:</span>
+					<div class="skillData">
+						<div style="width: 60%;">掌握</div>
+					</div>
+					<span>数据结构:</span>
+					<div class="skillData">
+						<div style="width: 60%;">掌握</div>
+					</div>
+					<span>Java:</span>
+					<div class="skillData">
+						<div style="width: 60%;">掌握</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<span>Html5:</span>
+					<div class="skillData">
+						<div style="width: 75%;">熟练</div>
+					</div>
+					<span>Css3:</span>
+					<div class="skillData">
+						<div style="width: 70%;">熟练</div>
+					</div>
+					<span>JavaScript:</span>
+					<div class="skillData">
+						<div style="width: 85%;">精通</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<span>Node.js:</span>
+					<div class="skillData">
+						<div style="width: 60%;">掌握</div>
+					</div>
+					<span>Vue:</span>
+					<div class="skillData">
+						<div style="width: 75%;">熟练</div>
+					</div>
+					<span>React:</span>
+					<div class="skillData">
+						<div style="width: 70%;">熟练</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="campus">
+				<h4>2015-09-2018-06</h4>
+				<p>做了一些项目，项目地址在，项目经验中</p>
+			</div>
+			<div class="project">
+				<ul>
+					<li>
+						<a href="https://github.com/chengliang666">项目仓库地址</a>
+					</li>
+<!--					<li>-->
+<!--						<a href="https://github.com/LearGroup/campus-community-project/tree/appFront">https://github.com/LearGroup/campus-community-project/tree/appFront</a>-->
+<!--					</li>-->
+<!--					<li>-->
+<!--						<a href="https://github.com/sadofriod/belong-to-me">https://github.com/sadofriod/belong-to-me</a>-->
+<!--					</li>-->
+				</ul>
+			</div>
+			<div class="education">
+				<h4>2015-09-2018-06</h4>
+				<p>主修课程:<br />面向对象程序设计、数据结构、操作系统、计算机原理、计算机网络技术、数据库(mysql)、web编程、java高级 </p>
+			</div>
+			<p style="text-align: center;padding-top: 10px; border-top: 2px solid #31B0D5;">
+				<a href="https://chengliang666.github.io">个人主页</a>
+			</p>
+
+		</div>
+		<div class="maskBg"></div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+		var height = $(window).height();
+		var width = $(window).width();
+		$('.container').css({
+			height: height,
+			width: width
+		})
+		var setInit = function() { //模块位置初始化
+			$('.item').css({
+				top: (height - 80) / 2,
+				right: (width -80) / 2
+			})
+		}()
+
+		function draw(rote) { //获取元素坐标
+			var y = (height - 80) / 2;
+			//圆心纵坐标
+			var x = (width - 80) / 2;
+			//圆心横坐标
+			var r = (height - 120) / 2;
+			//半径
+			//x1   =   x0   +   r   *   cos(ao   *   3.14   /180   ) 
+			//y1   =   y0   +   r   *   sin(ao   *   3.14   /180   )
+			var sit = {};
+			sit.x1 = Math.round(x + r * Math.cos(rote * 3.14 / 180));
+			sit.y1 = Math.round(y + r * Math.sin(rote * 3.14 / 180));
+			console.log(sit.x1 + "  " + sit.y1)
+			return sit;
+		}
+		var roll = $('.container').children();
+		var i1 = 0; //循环变量
+		var k = 0; //起始旋转角度
+		var flag1 = setInterval(function() {
+			var r = draw(k);
+			if(i1 > 5) {
+				clearInterval(flag1);
+				return;
+			}
+			$(roll[i1]).show(250);
+			$(roll[i1]).animate({
+				top: r.y1,
+				right: r.x1
+			}, 260)
+			k += 60;
+			i1++;
+
+		}, 450);
+		$('.container').on('click', '.item', function(e) {
+			if($(this).attr('class') == 'item') {
+				$('.maskBg').show();
+				$('.mask').show(200);
+			}
+			if($(this).attr('data-toggle') == 0) {
+				$('.mask').find('h2').html('个人介绍');
+				$('.mask > div').hide();
+				$('.personalIntroduction').show();
+			} else if($(this).attr('data-toggle') == 5) {
+				$('.mask').find('h2').html('自我评价');
+				$('.mask > div').hide();
+				$('.selfAssessment').show();
+			} else if($(this).attr('data-toggle') == 4) {
+				$('.mask').find('h2').html('技能偏向');
+				$('.mask > div').hide();
+				$('.skillBiased').show();
+			} else if($(this).attr('data-toggle') == 3) {
+				$('.mask').find('h2').html('校园经历');
+				$('.mask > div').hide();
+				$('.campus').show();
+			} else if($(this).attr('data-toggle') == 2) {
+				$('.mask').find('h2').html('项目经验');
+				$('.mask > div').hide();
+				$('.project').show();
+			} else if($(this).attr('data-toggle') == 1) {
+				$('.mask').find('h2').html('教育背景');
+				$('.mask > div').hide();
+				$('.education').show();
+			} else {
+				return
+			}
+		})
+		$('.container').on('mouseenter', '.item', function(e) {
+			if($(this).attr('data-toggle') == 0) {
+				$('.resume').html('个人介绍');
+			} else if($(this).attr('data-toggle') == 5) {
+				$('.resume').html('自我评价');
+			} else if($(this).attr('data-toggle') == 4) {
+				$('.resume').html('技能偏向');
+			} else if($(this).attr('data-toggle') == 3) {
+				$('.resume').html('校园经历');
+			} else if($(this).attr('data-toggle') == 2) {
+				$('.resume').html('项目经验');
+			} else if($(this).attr('data-toggle') == 1) {
+				$('.resume').html('教育背景');
+			} else {
+				return
+			}
+		})
+		$('.maskBg').click(function() {
+			$('.mask').hide(200)
+			setTimeout($(this).hide(), 210)
+
+		})
+	</script>
+
+</html>
